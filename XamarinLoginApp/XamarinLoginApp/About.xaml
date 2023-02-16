@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLoginApp.About">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!-- Gradient -->
+            <Frame BorderColor="LightGray"
+            HasShadow="True"
+            HeightRequest="900"
+            WidthRequest="400">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Pink"
+                          Offset="0.1" />
+                        <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <Frame 
+                BackgroundColor="White"
+                CornerRadius="15"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.45,350,690"
+            />
+
+            <Label 
+                Text="About"
+                FontSize="32"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.03"
+                />
+            <Frame
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.2, 300, 300"
+                CornerRadius="100"
+                Padding="0"
+                IsClippedToBounds="True"
+                >
+                <Image
+                    Source="https://avatars.githubusercontent.com/u/64594596?v=4" 
+                />
+            </Frame>
+
+            <Label 
+                Text="This app was created for sending"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.57"
+                />
+            <Label 
+                Text="application to our company."
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.60"
+                />
+            <Label 
+                Text="Address"
+                FontSize="22"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.65"
+                />
+            <Label
+                Text="179, Taksin Maharat Rd"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.69"
+                />
+            <Label 
+                Text="Mueang Rayong District, Rayong"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.72"
+                />
+            <Label 
+                Text="Contact"
+                FontSize="22"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.77"
+                />
+            <Label 
+                Text="Email: borworntat.d@gmail.com"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.80"
+                />
+            <Label 
+                Text="Tel: +668-5843-2142"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.83"
+                />
+            <Label 
+                Text="Facebook: Borworntat Dendumrongkul"
+                FontSize="16"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.86"
+                />
+            <Label 
+                Text="Discord: Hydrolyzed~#4950"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.89"
+                />
+            <Label 
+                Text="Instagram: iicxx.exe_"
+                FontSize="18"
+                FontFamily="Paragraph"
+                TextColor="Black"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.92"
+                />
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

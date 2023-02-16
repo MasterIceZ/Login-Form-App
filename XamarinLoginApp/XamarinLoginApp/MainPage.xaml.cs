@@ -27,7 +27,7 @@ namespace XamarinLoginApp
         }
         async void handleAboutButton(object sender, EventArgs e)
         {
-            // Navigation.PushAsync(new About());
+            Navigation.PushAsync(new About());
         }
     }
 }
