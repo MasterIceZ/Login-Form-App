@@ -3,22 +3,79 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinLoginApp.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <AbsoluteLayout BackgroundColor="White">
+       <Frame BorderColor="LightGray"
+            HasShadow="True"
+            HeightRequest="900"
+            WidthRequest="400">
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="Pink"
+                          Offset="0.1" />
+                    <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+
+        <Frame 
+            BackgroundColor="White"
+            CornerRadius="15"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.45,350,600"
+            />
+
+        <Image
+            Source="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/xttsh0nidtqcgcs4odyi"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.18,100,100"
+            />
+        <Entry
+            FontSize="24"
+            FontFamily="Paragraph"
+            Placeholder="Username"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.35,300,100"
+            />
+
+        <Entry
+            FontSize="24"
+            FontFamily="Paragraph"
+            Placeholder="Password"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.5,300,100"
+            />
+
+        <Button
+            Text="LOGIN"
+            FontSize="24"
+            FontFamily="Paragraph"
+            BackgroundColor="Pink"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.64,320,50"
+            Clicked="handleLoginButton"
+            />
+
+        <Button
+            Text="REGISTER"
+            FontSize="24"
+            FontFamily="Paragraph"
+            BackgroundColor="Pink"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.74,320,50"
+            Clicked="handleRegisterButton"
+            />
+
+        <Button
+            Text="ABOUT"
+            FontSize="20"
+            FontFamily="Paragraph"
+            BackgroundColor="Pink"
+            AbsoluteLayout.LayoutFlags="PositionProportional"
+            AbsoluteLayout.LayoutBounds="0.5,0.96,150,50"
+            Clicked="handleAboutButton"
+            />
+
+    </AbsoluteLayout>
 
 </ContentPage>
