@@ -29,4 +29,10 @@
     <EmbeddedResource Include="font\FCParagraph.ttf" />
     <EmbeddedResource Include="imgs\gradient.jpg" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Register.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

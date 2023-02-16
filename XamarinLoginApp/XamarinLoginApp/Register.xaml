@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinLoginApp.Register">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <!-- Gradient -->
+            <Frame BorderColor="LightGray"
+            HasShadow="True"
+            HeightRequest="900"
+            WidthRequest="400">
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Pink"
+                          Offset="0.1" />
+                        <GradientStop Color="SkyBlue"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+            </Frame>
+
+            <Frame 
+                BackgroundColor="White"
+                CornerRadius="15"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.45,350,730"
+            />
+
+            <Image
+                Source="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/xttsh0nidtqcgcs4odyi"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.1,75,75"
+            />
+
+            <Entry
+                FontSize="22"
+                FontFamily="Paragraph"
+                Placeholder="First Name"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.25,300,100"
+            />
+
+            <Entry
+                FontSize="22"
+                FontFamily="Paragraph"
+                Placeholder="Last Name"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.35,300,100"
+            />
+
+            <Entry
+                FontSize="22"
+                FontFamily="Paragraph"
+                Placeholder="Email"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.45,300,100"
+            />
+            <Entry
+                FontSize="22"
+                FontFamily="Paragraph"
+                Placeholder="Phone Number"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.55,300,100"
+            />
+
+            <Label
+                Text="Gender"
+                FontSize="20"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.15,0.63"
+            />
+            
+            <Picker 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 0.69, 300, 100"
+                FontFamily="Paragraph"
+                FontSize="22"
+            >
+                <Picker.Items>
+                    <x:String>Male</x:String>
+                    <x:String>Female</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label
+                FontFamily="Paragraph"
+                FontSize="20"
+                Text="Interests"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.15, 0.75"
+                />
+            <CheckBox 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                AbsoluteLayout.LayoutBounds="0.15, 0.80"
+                />
+            <Label
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.3, 0.80"
+                Text="Front-End"
+                FontFamily="Paragraph"
+                FontSize="20"
+                />
+            <CheckBox 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                AbsoluteLayout.LayoutBounds="0.15, 0.84"
+                />
+            <Label
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.3, 0.84"
+                Text="Back-End"
+                FontFamily="Paragraph"
+                FontSize="20"
+                />
+            <CheckBox 
+                AbsoluteLayout.LayoutFlags="PositionProportional" 
+                AbsoluteLayout.LayoutBounds="0.15, 0.88"
+                />
+            <Label
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.3, 0.88"
+                Text="DevOps"
+                FontFamily="Paragraph"
+                FontSize="20"
+                />
+            <Button
+                Text="REGISTER"
+                FontSize="24"
+                FontFamily="Paragraph"
+                BackgroundColor="Pink"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                AbsoluteLayout.LayoutBounds="0.5,0.96,320,50"
+                CornerRadius="10"
+            />
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -23,11 +23,11 @@ namespace XamarinLoginApp
         }
         async void handleRegisterButton(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new Register());
         }
         async void handleAboutButton(object sender, EventArgs e)
         {
-
+            // Navigation.PushAsync(new About());
         }
     }
 }
